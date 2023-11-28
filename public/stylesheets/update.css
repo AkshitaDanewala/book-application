@@ -8,9 +8,9 @@ html,body{
     width: 100%;
 }
 .pg3{
-    height: 100vh;
+    height: 120vh;
     width: 100%;
-    background-color: pink;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,15 +18,17 @@ html,body{
 }
 h3{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vmax;
+    font-size: 3vmax;
 margin-top: 2vmax;
-transform: translateX(-35vmax);
+color: white;
+/* transform: translateX(-35vmax); */
 }
 form{
-    height: 80vh;
+    height: 84vh;
     width: 40vw;
-    border: 2px solid black;
-/* margin-top: 2vmax; */
+    /* border: 2px solid white; */
+    box-shadow: 0 0 7px grey;
+margin-top: 3vmax;
 border-radius: 2vmax;
 }
 input{
@@ -36,7 +38,7 @@ input{
 outline: none;
 border: none;
 border-radius: 0.5vmax;
-margin-top: 1vmax;
+margin-top: 1.3vmax;
 margin-left: 9vmax;
 text-align: center;
 }
@@ -57,8 +59,7 @@ button{
     font-size: 1.4vmax;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-color: black;
-    color: white;
+    background-color: red;
     padding: 0.6vmax 1.5vmax;
     margin-top:1vmax;
     margin-left: 15vmax;

@@ -20,7 +20,8 @@ html,body{
 height: 90vh;
 width: 100%;
 border: 2px solid white;
-
+overflow-y: auto;
+padding: 0 6vmax;
 
 }
 .cards-box::-webkit-scrollbar{
