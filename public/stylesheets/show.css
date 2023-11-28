@@ -19,7 +19,7 @@ html,body{
 .cards-box{
 height: 90vh;
 width: 100%;
-border: 2px solid white;
+border: 2px solid black;
 overflow-y: auto;
 padding: 0 6vmax;
 
@@ -33,10 +33,10 @@ padding: 0 6vmax;
     background-color: black;
     display: inline-block;
     margin: 0 2vmax;
-    margin-top: 4vmax;
+    margin-top: 2.5vmax;
     border-radius: 1vmax;
     padding: 0.5vmax 0.5vmax;
-   
+   margin-bottom: 1vmax;
 }
 img{
     height: 40vh;
@@ -53,6 +53,7 @@ object-position: top;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3vmax;
     margin: 0.7vmax 0;
+    width: fit-content;
 }
 
  .explore{

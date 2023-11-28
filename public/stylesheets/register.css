@@ -8,7 +8,7 @@ html,body{
     width: 100%;
 }
 .pg2{
-    height: 100vh;
+    height: 115vh;
     width: 100%;
     background-image: url("https://images.unsplash.com/photo-1591951425328-48c1fe7179cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJvb2tzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
   background-position: center;
@@ -17,7 +17,7 @@ html,body{
   
 }
 .overlay{
-    height: 100vh;
+    height: 115vh;
     width: 100%;
     /* backdrop-filter: blur(1px); */
     display: flex;
@@ -26,11 +26,17 @@ html,body{
 
  
 }
+.overlay >h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vmax;
+    margin-top: 2vmax;
+}
+
 form{
     height: 85vh;
     width: 45vw;
     border: 2px solid black;
-    margin-top: 1.3vmax;
+    margin-top: 2vmax;
     background-image: url("https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1948&q=80");
     background-position: center;
     background-size: cover;
