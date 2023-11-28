@@ -1,0 +1,33 @@
+<%- include("partials/header")%>
+<link rel="stylesheet" href="stylesheets/show.css">
+
+
+
+<div class="pg1">
+    <%- include("partials/nav")%>
+    <!-- <%= JSON.stringify(readfiles)%> -->
+
+<div class="cards-box">
+    <% readfiles.forEach(function(data, i){ %>
+ <div class="card">
+  <img src="<%= data.image%>" alt="">
+   <h2> <span> Author:</span> <%= data.author%></h2>
+   <h2> <span> Country:</span> <%= data.country%></h2>
+  <h2> <span>  Title:</span> <%= data.title%></h2>
+ <h2> <span>   Pages:</span> <%= data.pages%></h2>
+ <h2> <span>   Publication:</span> <%= data.Year%></h2>
+<p>
+   <a target="_blank" href="<%= data.link%>" class="explore">Explore</a>
+<a href="/delete/<%= i%>" class="explore">Delete</a>
+<a target="_blank" href="/update/<%= i%>" class="explore">Update</a>
+</p>
+</div>
+      
+   <% })%>
+   
+</div>    
+</div>
+
+
+<%- include("partials/footer")%>
+

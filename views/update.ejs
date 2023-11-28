@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/stylesheets/update.css">
+<%- include("partials/header")%>
+
+
+<div class="pg3">
+        <%- include("partials/nav")%>
+     <h3>Update your Book</h3>
+        <form action="/update/<%= index%>" method="post">
+            <input type="text" name="author" placeholder="Author" class="author" value="<%= book.author%>">
+
+           <select name="country">
+            <option value="">Select country</option>
+            <% countryNames.forEach(function(c){ %>
+<option 
+<%= book.country === c ? "selected" : ""%>
+value="<%= c%>"><%= c%></option>
+           <% })%>
+            
+           </select> <br>
+
+           <input type="text" name="image" placeholder="Image Link" class="imglink" value="<%= book.image%>">
+
+           <select name="language" >
+            <option value="">Select Language</option>
+            <% languageNames.forEach(function(l){ %>
+<option 
+<%= book.language === l.name ? "selected" : "" %>
+
+value="<%= l.name%>"><%= l.name%></option>
+           <% })%>
+           
+           </select> <br>
+
+           <input type="text" name="link" placeholder="Link" value="<%= book.link%>">
+           <input type="number" name="pages" placeholder="Pages" value="<%= book.pages%>"> <br>
+           <input type="text" name="title" placeholder="Title" value="<%= book.title%>">
+           <input type="text" name="Year" placeholder="Publication" value="<%= book.year%>"> <br>
+             <button>submit</button>
+        </form>
+    
+</div>
+
+<%- include("partials/footer")%>
+
+
